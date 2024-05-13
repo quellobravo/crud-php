@@ -30,6 +30,7 @@
 				<label for="lat">latitudine</label> <input type="text" name="lat" id="lat"><br>
 				<label for="lon">longitudine</label> <input type="text" name="lon" id="lon">
 			</fieldset>
+			<input type="submit" value="Cerca">
 		</form>
 	</body>
 </html>
