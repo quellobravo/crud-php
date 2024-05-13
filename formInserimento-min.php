@@ -23,6 +23,8 @@
 			<br><br>
 			latitudine <input type="text" name="lat" id="lat"><br>
 			longitudine <input type="text" name="lon" id="lon">
+			<br><br>
+			<input type="submit" value="Cerca">
 		</form>
 	</body>
 </html>
