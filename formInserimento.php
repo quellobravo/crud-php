@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<h1>Form Inserimento Dati</h1>
-		<form method="POST" action="inserimentoEvento.php">
+		<form method="post" action="inserimentoEvento.php">
 			<fieldset>
 				<legend>Dati obbligatori</legend>
 				<label for="titoloEvento"></label>
