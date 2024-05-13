@@ -8,7 +8,7 @@
 		<form method="post" action="inserimentoEvento.php">
 			<fieldset>
 				<legend>Dati obbligatori</legend>
-				<label for="titoloEvento"></label>
+				<label for="titoloEvento">Titolo evento</label>
 				<input type="text" name="titoloEvento" id="titoloEvento">
 				<label for="loc">Localit&agrave;</label>
 				<input type="text" name="loc" id="loc">
