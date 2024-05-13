@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="it">
 	<head>
 		<title>Elenco Operazioni</title>
