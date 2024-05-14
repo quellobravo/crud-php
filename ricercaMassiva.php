@@ -13,7 +13,7 @@
       $db = "listaeventi";
       
       // Stabilisce la connessione al DBMS remoto
-      $connessione = mysqli_connect($servername, $username, $password, $db);
+      $connessione = mysqli_connect($serverName, $username, $password, $db);
       
       // Check connection
       if (!$connessione) { die("Errore connessione");	}
