@@ -4,7 +4,7 @@
 		<title>Form Inserimento</title>
 	</head>
 	<body>
-		<h1>Form Inserimento Dati</h1>
+		<h1>Scheda di Inserimento Dati</h1>
 		<form method="POST" action="inserimentoEvento.php">
 			Titolo evento
 			<input type="text" name="titoloEvento" id="titoloEvento"/><br>
