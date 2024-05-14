@@ -6,10 +6,11 @@
 	<body>
 		<h1>Elenco Operazioni</h1>
 		<ol>
-			<li><a href="formInserimento.php">(Create) Inserimento</a></li>
-			<li><a href="formRicerca-visualizzazione.php">(Read) Visualizzazione</a></li>
-			<li><a href="formRicerca-modifica.php">(Update) Modifica</a></li>
-			<li><a href="formRicerca-cancellazione.php">(Delete) Cancellazione</a></li>
+			<li><a href="formInserimento.php">(Create) Inserimento Evento</a></li>
+			<li><a href="formRicerca.php">(Read) Visualizzazione Evento</a></li>
+			<li><a href="ricercaMassiva.php">(Read) Visualizzazione (tutti i dati)</a></li>
+			<li><a href="formRicercaPreModifica.php">(Update) Modifica Evento</a></li>
+			<li><a href="formRicercaPreCancella.php">(Delete) Cancellazione Evento</a></li>
 		</ol>
 	</body>
 </html>
