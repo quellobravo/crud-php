@@ -10,7 +10,7 @@
       $IPserver = "127.0.1";
       $username = "applicazioneWeb";
       $password = "123456_Web&&";
-      $db = "eventi";
+      $db = "listaeventi";
       
       // Stabilisce la connessione al DBMS remoto
       $connessione = mysqli_connect($servername, $username, $password, $db);
@@ -18,7 +18,7 @@
       // Check connection
       if (!$connessione) { die("Errore connessione");	}
       
-      $istruzioneSQL = "SELECT id, titolo FROM listaEventi";
+      $istruzioneSQL = "SELECT id, titolo FROM eventi";
       $tuple = mysqli_query($connessione,$istruzioneSQL);
       
       if (mysqli_num_rows($tuple) > 0) 
