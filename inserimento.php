@@ -13,19 +13,18 @@
       $db = "listaeventi";
       
       // Stabilisce la connessione al DBMS remoto
-      $connessione = mysqli_connect($servername, $username, $password, $db);
+      $connessione = mysqli_connect($serverName, $username, $password, $db);
       
       // Check connection
       if (!$connessione) { die("Errore connessione");	}
       
-      $istruzioneSQL = "INSERT INTO 'eventi'('titolo', 'descrizione', 'tipo', 'accesso', 'lat', 'long') VALUES (";
-      $istruzione .= "'".$_POST['titolo']."'";
-      $istruzione .= ",'".$_POST['descrizione']."'";
-      $istruzione .= ",'".$_POST['tipo']."'";
-      $istruzione .= ",'".$_POST['accesso']."'";
-      $istruzione .= ",'".$_POST['lat']."'";
-      $istruzione .= ",'".$_POST['long']."'";
-      $istruzione .= ");";
+      $istruzioneSQL = "INSERT INTO eventi (titolo, descrizione, tipo, lat, lon) VALUES (";
+      $istruzioneSQL .= "'".$_POST['titoloEvento']."'";
+      $istruzioneSQL .= ",'".$_POST['descrizione']."'";
+      $istruzioneSQL .= ",'".$_POST['r1']."'";
+      $istruzioneSQL .= ",'".$_POST['lat']."'";
+      $istruzioneSQL .= ",'".$_POST['lon']."'";
+      $istruzioneSQL .= ");";
       mysqli_query($connessione,$istruzioneSQL);
 
       echo("<p>Operazione di inserimento eseguita</p>");
