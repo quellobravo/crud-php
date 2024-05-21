@@ -27,6 +27,6 @@
 
 		mysqli_close($connessione);
     ?> 	
-  
+	<a href="./">Home comandi</a>
   </body>
 </html>
