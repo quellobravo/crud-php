@@ -31,6 +31,7 @@
 				<label for="lon">longitudine</label> <input type="text" name="lon" id="lon">
 			</fieldset>
 			<input type="submit" value="Inserisci">
+			<a href="./" style="margin-left: 30px;">Home comandi</a>
 		</form>
 	</body>
 </html>
