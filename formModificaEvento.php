@@ -48,6 +48,7 @@
 				<label for="lon">longitudine</label> <input type="text" name="lon" id="lon" value="<?php echo($riga['lon']);?>">
 			</fieldset>
 			<input type="submit" value="Modifica">
+			<a href="./" style="margin-left: 30px;">Home comandi</a>
 	<?php
 		} 
 		else 
