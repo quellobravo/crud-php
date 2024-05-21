@@ -35,6 +35,6 @@
       { echo "0 results"; }
       mysqli_close($connessione);
     ?> 	
-  
+    <a href="./" style="margin-left: 30px;">Home comandi</a>
   </body>
 </html>
