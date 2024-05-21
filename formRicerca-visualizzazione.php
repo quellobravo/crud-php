@@ -25,6 +25,7 @@
 				<input type="radio" value="biglietto" name="r3" id="r3_3"><label for="r3_3">Biglietto</label><br>
 				<input type="radio" value="%" name="r3" id="r3_4"><label for="r3_4">Tutti</label><br>
 			<input type="submit" value="Ricerca">
+			<a href="./" style="margin-left: 30px;">Home comandi</a>
 		</form>
 	</body>
 </html>
