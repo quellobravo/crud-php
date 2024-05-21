@@ -6,11 +6,10 @@ Il metodo http implementato è il GET
 */
 <?php
 	header('Content-Type: application/text');
-	$data = $_GET['data'];
-	$orario = $_GET['orario'];
 	$lat = $_GET['lat'];
 	$lon = $_GET['lon'];
 	$v = $_GET['v'];
+	$iddispositivo = $_GET['iddispositivo'];
 
 	// Connessione al db
 	//								              nome del       utente	password	  nome del 
@@ -18,11 +17,11 @@ Il metodo http implementato è il GET
 	$connessione = mysqli_connect("dbserver.local", "ws", "ws001&&", "datitrasporto");
 	
 	// Predisposizione della query di inserimento
-	$istruzioneSQL = mysqli_prepare($connessione,"INSERT INTO dati (data,orario,lat,lon,v) VALUES (?,?,?,?,?");
+	$istruzioneSQL = mysqli_prepare($connessione,"INSERT INTO dati (lat,lon,v,iddispositivo) VALUES (?,?,?,?)");
 	
 	// Esecuzione della query
-	mysqli_stmt_bind_param($istruzioneSQL, $data, $orario, $lat, $lon, $v);
-	mysqli_query($connessione,$istruzioneSQL);
+	mysqli_stmt_bind_param($istruzioneSQL, "iiii", $lat, $lon, $v, $iddispositivo);
+	mysqli_stmt_execute($istruzioneSQL);
 	
 	// Chiudere la connessione
 	mysqli_close($connessione);
