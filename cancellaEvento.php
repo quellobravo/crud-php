@@ -20,7 +20,11 @@
 
 		$istruzioneSQL = "DELETE FROM eventi WHERE ";
 		$istruzioneSQL .= "id = ".$_GET['id'].";";
-		
+		$istruzioneSQL = mysqli_prepare($connessione,"DELETE FROM eventi (id) WHERE (?)");
+	
+		// Esecuzione della query
+		mysqli_stmt_bind_param($istruzioneSQL, "i", $id,);
+		mysqli_stmt_execute($istruzioneSQL);
 		echo("<p>".$istruzioneSQL."</p>");
 		
 		mysqli_query($connessione,$istruzioneSQL);
